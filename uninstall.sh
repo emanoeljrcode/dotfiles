@@ -12,7 +12,7 @@ fi
 #--- Neovim Settings
 #
 rm $HOME/.config/nvim
-if [ -f "$HOME/.config/nvim.backup" ]; then
+if [ -d "$HOME/.config/nvim.backup" ]; then
 	mv $HOME/.config/nvim.backup $HOME/.config/nvim
 fi
 #
