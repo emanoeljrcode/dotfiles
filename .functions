@@ -1,0 +1,2 @@
+# Function: mkdir + cd
+function mkd() { mkdir -p "$@" && cd "$_";}

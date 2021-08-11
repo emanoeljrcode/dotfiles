@@ -1,0 +1,18 @@
+#-------------------------------------------
+# Commom aliases
+#-------------------------------------------
+alias reload='source ~/.zshrc'
+#alias ls='ls -A'
+
+#-------------------------------------------
+# Git specific aliases
+#-------------------------------------------
+alias gpom='git push origin master'
+alias ga='git add .'
+
+#-------------------------------------------
+# Node aliases
+#-------------------------------------------
+alias nr='npm run'
+alias ni='npm install'
+alias nid='npm install -D'
