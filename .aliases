@@ -2,7 +2,7 @@
 # Commom aliases
 #-------------------------------------------
 alias reload='source ~/.zshrc'
-#alias ls='ls -A'
+alias ls='ls -A --color=auto'
 
 #-------------------------------------------
 # Git specific aliases
