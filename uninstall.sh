@@ -11,9 +11,9 @@ fi
 #
 #--- Neovim Settings
 #
-if [ -f "$HOME/.config/nvim/init.vim.backup" ]; then
-	rm $HOME/.config/nvim/init.vim
-	mv $HOME/.config/nvim/init.vim.backup $HOME/.config/nvim/init.vim
+if [ -f "$HOME/.config/nvim.backup" ]; then
+	rm $HOME/.config/nvim
+	mv $HOME/.config/nvim.backup $HOME/.config/nvim
 fi
 #
 if [ -d "$HOME/.local/share/nvim.backup" ]; then
