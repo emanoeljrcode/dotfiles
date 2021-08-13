@@ -1,7 +1,15 @@
 # Function: mkdir + cd
 mkd() { mkdir -p "$@" && cd "$_";}
 
+uninstall_ejdots() { sh $EJPATH/tools/uninstall.sh;} # Function: uninstall EJDots
+
+# ===
+# GIT
+# ===
+
 gcm() { git commit -m "$1";} # Function: git commit with message
 
-uninstall_ejdots() { sh $EJPATH/tools/uninstall.sh;} # Function: uninstall EJDots
+git_prompt_info() {
+  echo "(git)"
+}
 
