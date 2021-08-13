@@ -6,6 +6,14 @@ if [ ! -d "$HOME/.ejdots" ]; then
 	git clone https://github.com/emanoeljrcode/dotfiles.git "$HOME/.ejdots"
 #
 
+
+if [ ! -d "$HOME/.zprezto" ]; then # check if zprezto is already installed
+  echo "Instaling Zprezto"
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" 
+else
+  echo "Zprezto is already installed."
+fi
+
 #--- ZSH Settings
 #
 	if [ -f "$HOME/.zshrc" ]; then

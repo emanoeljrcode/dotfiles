@@ -1,7 +1,13 @@
 #!/bin/sh
 
+read -p "Are you sure you want to uninstall EJDots? [y/N] " confirmation
+if [ $confirmation != y ] && [ $confirmation != Y ]; then
+  echo "Uninstall cancelled"
+  exit
+fi
+
 #
-#--- ZSH Settings
+#--- ZSH Uninstall Process
 #
 rm $HOME/.zshrc
 if [ -f "$HOME/.zshrc.backup" ]; then
@@ -9,7 +15,7 @@ if [ -f "$HOME/.zshrc.backup" ]; then
 fi
 
 #
-#--- Neovim Settings
+#--- Neovim Uninstall Process
 #
 rm $HOME/.config/nvim
 if [ -d "$HOME/.config/nvim.backup" ]; then
@@ -22,7 +28,7 @@ if [ -d "$HOME/.local/share/nvim.backup" ]; then
 fi
 
 #
-#--- TMUX Settings
+#--- TMUX Uninstall Process
 #
 rm $HOME/.tmux.conf
 if [ -f "$HOME/.tmux.conf.backup" ]; then
