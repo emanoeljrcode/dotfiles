@@ -6,10 +6,25 @@ uninstall_ejdots() { sh $EJPATH/tools/uninstall.sh;} # Function: uninstall EJDot
 # ===
 # GIT
 # ===
+TEMPLATE_PROMPT_DIRTY='dirty'
+TEMPLATE_PROMPT_CLEAN='clean'
 
 gcm() { git commit -m "$1";} # Function: git commit with message
 
+git_branch_name() {
+  BRANCH=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  echo "$BRANCH"
+}
+
 git_prompt_info() {
-  echo "(git)"
+  if [ -d .git ]; then
+    if [[ $(git diff --shortstat 2> /dev/null | tail -n1) != '' ]]; then
+      echo " %F{255}git:(%F{203}$(git_branch_name)%f%F{255})%f "
+    else
+      echo " %F{255}git:(%F{118}$(git_branch_name)%f%F{255})%f "
+    fi
+  else
+    echo " "
+  fi
 }
 
