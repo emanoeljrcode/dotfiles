@@ -8,7 +8,7 @@ alias ls='ls -A --color=auto'
 # Git specific aliases
 #-------------------------------------------
 alias gpom='git push origin master'
-alias ga='git add .'
+alias ga='git add --all'
 
 #-------------------------------------------
 # Node aliases
