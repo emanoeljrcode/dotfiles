@@ -2,12 +2,12 @@
 
 ### To Install
 ```markdown
-sh -c "`curl -fsSL https://raw.githubusercontent.com/emanoeljrcode/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/emchavesjr/dotfiles/master/install.sh`"
 ```
 
 ### To Uninstall
 ```markdown
-sh -c "`curl -fsSL https://raw.githubusercontent.com/emanoeljrcode/dotfiles/master/uninstall.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/emchavesjr/dotfiles/master/uninstall.sh`"
 ```
 
 
