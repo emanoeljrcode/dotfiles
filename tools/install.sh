@@ -16,10 +16,11 @@ if [ ! -d "$HOME/.ejdots" ]; then
 #
 #--- Neovim Settings
 #
-	if [ -d "$HOME/.config/nvim" ]; then
-		mv $HOME/.config/nvim $HOME/.config/nvim.backup
+	if [ -f "$HOME/.config/nvim/init.vim" ]; then
+		mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim.backup
 	fi
-	ln -s $HOME/.ejdots/nvim/nvim.config $HOME/.config/nvim
+	ln -s $HOME/.ejdots/nvim/init.vim $HOME/.config/nvim/
+	ln -s $HOME/.ejdots/nvim/init.vim $HOME/.vimrc
 #
 	if [ -d "$HOME/.local/share/nvim" ]; then
 		mv $HOME/.local/share/nvim $HOME/.local/share/nvim.backup
