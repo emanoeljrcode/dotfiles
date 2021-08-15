@@ -3,7 +3,12 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'morhetz/gruvbox'
+Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
+Plug 'sheerun/vim-polyglot'
+Plug 'mxw/vim-jsx'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " === Gruvbox as main theme ===

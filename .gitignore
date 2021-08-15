@@ -1,3 +1,4 @@
-nvim/nvim.local/shada/*.shada
-nvim/nvim.local/swap/*
-nvim/nvim.local/.netrwhist
+*.shada
+*.swp
+*.netrwhist
+*.backup
