@@ -11,7 +11,7 @@ if [ ! -d "$HOME/.ejdots" ]; then
 	if [ -f "$HOME/.zshrc" ]; then
 		mv $HOME/.zshrc $HOME/.zshrc.backup
 	fi
-	ln -s $HOME/.ejdots/zsh/.zshrc $HOME
+	ln -s $HOME/.ejdots/zsh/zshrc $HOME/.zshrc
 
 #
 #--- Neovim Settings
@@ -33,7 +33,7 @@ if [ ! -d "$HOME/.ejdots" ]; then
 	if [ -f "$HOME/.tmux.conf" ]; then
 		mv $HOME/.tmux.conf $HOME/.tmux.conf.backup
 	fi
-	ln -s $HOME/.ejdots/tmux/.tmux.conf $HOME
+	ln -s $HOME/.ejdots/tmux/tmux.conf $HOME/.tmux.conf
 #
 	echo "EJDots has been successfully installed!"
 else
