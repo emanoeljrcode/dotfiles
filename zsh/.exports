@@ -1,7 +1,0 @@
-export PATH=$PATH:$HOME/.asdf:$HOME/.asdf/bin:$HOME/.asdf/shims
-export EDITOR=vim
-
-export EJPATH=$HOME/.ejdots
-
-export SCANPATH=$HOME/.node-red/projects/scanuplam-node-red/
-export SRCPATH=$SCANPATH/uibuilder/app/src/
