@@ -10,6 +10,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'neovim/nvim-lsp'
 Plug 'nvim-lua/completion-nvim'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 " === General config ===
