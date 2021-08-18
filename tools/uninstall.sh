@@ -18,6 +18,7 @@ fi
 #--- Neovim Uninstall Process
 #
 rm $HOME/.config/nvim
+rm $HOME/.vimrc
 if [ -d "$HOME/.config/nvim.backup" ]; then
 	mv $HOME/.config/nvim.backup $HOME/.config/nvim
 fi
