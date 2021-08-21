@@ -8,9 +8,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'mxw/vim-jsx'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'neovim/nvim-lsp'
 Plug 'nvim-lua/completion-nvim'
 Plug 'mattn/emmet-vim'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " === General config ===
@@ -30,6 +32,7 @@ set colorcolumn=80
 
 set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
+set nohlsearch
 
 " === 
 set completeopt=menuone,noinsert,noselect
@@ -43,6 +46,9 @@ set background=dark
 
 lua << EOF
   require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
+  require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
 EOF
 
-nnoremap <silent> <C-p> :FZF<CR>
+let g:UltiSnipsEditSplit="vertical"
+
+nnoremap <silent> <C-p> :FZF ~<CR>
