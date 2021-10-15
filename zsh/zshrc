@@ -1,6 +1,11 @@
 #-------------------------------------------
 # begin {aliases}
 #-------------------------------------------
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
+
 alias reload='source ~/.zshrc'
 alias ls='ls -A --color=auto'
 alias v='nvim'
